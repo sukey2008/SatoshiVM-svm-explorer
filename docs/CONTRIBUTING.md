@@ -6,7 +6,7 @@ Thanks for showing interest to contribute to Blockscout. The following steps wil
 
 ## Project setup
 
-1. Fork the repo by clicking <kbd>Fork</kbd> button at the top of the repo main page and name it appropriately
+1. Fork the repo by clicking <kbd>Fork</kbd> button at the top of the repo main page and name it appropriately.
 
 2. Clone your fork locally
     ```sh
@@ -29,7 +29,7 @@ Thanks for showing interest to contribute to Blockscout. The following steps wil
 
 ## Toolkit
 
-We are using following technology stack in the project
+We are using the following technology stack in the project
 - [Yarn](https://yarnpkg.com/) as package manager
 - [ReactJS](https://reactjs.org/) as UI library
 - [Next.js](https://nextjs.org/) as application framework
@@ -49,13 +49,13 @@ To develop locally, follow one of the two paths outlined below:
 A. Custom configuration:
 
 1. Create `.env.local` file in the root folder and include all required environment variables from the [list](./ENVS.md)
-2. Optionally, clone `.env.example` and name it `.env.secrets`. Fill it with necessary secrets for integrating with [external services](./ENVS.md#external-services-configuration). Include only secrets your need.
+2. Optionally, clone `.env.example` and name it `.env.secrets`. Fill it with necessary secrets for integrating with [external services](./ENVS.md#external-services-configuration). Include only secrets you need.
 3. Use `yarn dev` command to start the dev server.
 4. Open your browser and navigate to the URL provided in the command line output (by default, it is `http://localhost:3000`).
 
 B. Pre-defined configuration:
 
-1. Optionally, clone `.env.example` file into `configs/envs/.env.secrets`. Fill it with necessary secrets for integrating with [external services](./ENVS.md#external-services-configuration). Include only secrets your need.
+1. Optionally, clone `.env.example` file into `configs/envs/.env.secrets`. Fill it with necessary secrets for integrating with [external services](./ENVS.md#external-services-configuration). Include only secrets you need.
 2. Choose one of the predefined configurations located in the `/configs/envs` folder.
 3. Start your local dev server using the `yarn dev:<config_name>` command.
 4. Open your browser and navigate to the URL provided in the command line output (by default, it is `http://localhost:3000`).
@@ -66,7 +66,7 @@ B. Pre-defined configuration:
 ## Adding new dependencies
 For all types of dependencies:
 - **Do not add** a dependency if the desired functionality is easily implementable
-- If adding a dependency is necessary, please be sure that is is well-maintained and trustworthy
+- If adding a dependency is necessary, please be sure that is well-maintained and trustworthy
 
 &nbsp;
 
@@ -108,7 +108,7 @@ Every feature or bugfix should be accompanied by tests, either unit tests or com
 
 ### Jest unit tests
 
-If your changes only related to the logic of the app and not to its visual presentation, then try to write unit tests using [Jest](https://jestjs.io/) framework and [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/). In general these tests are "cheaper" and faster than Playwright ones. Use them for testing your utilities and React hooks, as well as the whole components logic. 
+If your changes are only related to the logic of the app and not to its visual presentation, then try to write unit tests using [Jest](https://jestjs.io/) framework and [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/). In general these tests are "cheaper" and faster than Playwright ones. Use them for testing your utilities and React hooks, as well as the whole components logic. 
 
 Place your test suites in `.test.ts` or `.test.tsx` files. You can find or add some mocks or other helpful utilities for these tests purposes in the `/jest` folder. 
 
